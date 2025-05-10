@@ -1,0 +1,189 @@
+/* Global Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+/* Typography */
+h1 {
+    color: #5d3b8f;
+    border-bottom: 3px solid #5d3b8f;
+    padding-bottom: 10px;
+    margin-top: 30px;
+    font-size: 2.2rem;
+}
+
+h3 {
+    color: #7c52b8;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+/* Lists */
+ol {
+    background-color: #f0e8ff;
+    padding: 20px 20px 20px 50px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+ol li {
+    padding: 8px 0;
+    color: #444;
+    font-weight: 500;
+}
+
+/* Image styling */
+img {
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(93, 59, 143, 0.3);
+    margin: 20px 0;
+    display: block;
+    border: 2px solid #7c52b8;
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.02);
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+th {
+    background-color: #5d3b8f;
+    color: white;
+    padding: 12px 15px;
+    text-align: left;
+    font-weight: bold;
+}
+
+td {
+    padding: 10px 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f0e8ff;
+}
+
+tbody tr:hover {
+    background-color: #e6d9ff;
+}
+
+/* Form styling */
+form {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+label {
+    display: inline-block;
+    width: 150px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #5d3b8f;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="password"],
+input[type="date"],
+select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 250px;
+    margin-bottom: 5px;
+    font-family: inherit;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="password"]:focus,
+input[type="date"]:focus,
+select:focus {
+    outline: none;
+    border-color: #7c52b8;
+    box-shadow: 0 0 5px rgba(124, 82, 184, 0.5);
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 5px;
+    margin-left: 10px;
+}
+
+select {
+    background-color: white;
+}
+
+button, 
+input[type="button"] {
+    background-color: #5d3b8f;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-right: 10px;
+    transition: background-color 0.3s;
+}
+
+button:hover,
+input[type="button"]:hover {
+    background-color: #7c52b8;
+}
+
+input[type="button"] {
+    background-color: #f44336;
+}
+
+input[type="button"]:hover {
+    background-color: #d32f2f;
+}
+
+/* Service required checkboxes */
+input[type="checkbox"][name="service_required"] + label {
+    display: inline;
+    width: auto;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    input[type="password"],
+    input[type="date"],
+    select {
+        width: 100%;
+    }
+    
+    label {
+        display: block;
+        width: 100%;
+    }
+    
+    table {
+        font-size: 0.9rem;
+    }
+}
